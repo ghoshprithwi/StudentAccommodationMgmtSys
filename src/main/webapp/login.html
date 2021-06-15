@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/login.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="hero-image-container">
+      <h1 id="main-heading">Student Accommodation Management System</h1>
+    </div>
+    <div id="login-container">
+      <h2>Log In</h2>
+      <div id="login-form">
+        <form action="LoginController" method="post">
+          <label for="username">User Name</label>
+          <input type="text" name="username" id="username" required>
+          <label for="pwd">Password</label>
+          <input type="password" name="pwd" id="pwd" required>
+          <label for="loginRole">Login As</label>
+          <select name="loginRole" id="loginRole">
+            <option value="admin" selected>Admin</option>
+            <option value="student">Student</option>
+          </select>
+          <button type="submit">Log In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

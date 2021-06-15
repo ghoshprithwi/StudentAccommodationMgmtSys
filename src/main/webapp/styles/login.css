@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #00d2ff, #3a7bd5);
+}
+
+#container {
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 0px rgba(84,82,84,0.5);
+}
+
+#hero-image-container,
+#login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  height: 100%;
+}
+
+#hero-image-container {
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.2), rgba(27, 127, 185, 0.7)), 
+  url('../assets/hostel_room.jpg') center no-repeat;
+  border-radius: 15px 0px 0px 15px;
+}
+
+#main-heading {
+  font-size: 4em;
+  color: #caf0f8;
+  border-radius: 15px 0px 0px 15px;
+  text-shadow: 3px 1px 15px rgba(75, 74, 74, 0.774);
+  padding: 1em;
+}
+
+/*LOGIN SECTION*/
+#login-container {
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #caf0f8;
+  padding: 6em;
+}
+
+#login-container h2{
+  font-size: 2.5em;
+}
+
+form {
+  font-size: 1.3em;
+  padding-top: 1em;
+}
+
+form *{
+  display: block;
+  outline: none;
+}
+
+
+form label {
+  padding: 1em 0 0.5em 0;
+}
+
+form input {
+  font-size: 0.8em;
+  padding: 8px 12px;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  transition: all 0.2s ease;
+}
+
+form input:focus,
+select:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 5px #51cbee;
+}
+
+form select {
+  font-size: 0.8em;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+form button {
+  font-size: 1em;
+  width: 150px;
+  padding: 10px 20px;
+  background: #0077b6;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #023e8a;
+  box-shadow: 0 0 5px #51cbee;
+}
